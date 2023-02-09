@@ -34,6 +34,7 @@ body{
     grid-template-rows: 338px 1200px 197px;
     font-family: 'Roboto','Shrikhand', sans-serif;
     margin: 0;
+    margin-left: 5px;
 }
 
 h1{
@@ -47,8 +48,9 @@ h1{
 h2{
     font-size: 16px;
     font-weight: 300;
-    border-bottom: 3px solid #99E2D0;
-    margin-left: 12px;
+    text-decoration: underline 3px solid #99E2D0;
+    text-decoration-line: 12px;
+    
 }
 
 section{
@@ -59,6 +61,7 @@ section{
     'aside2'
     'aside3';
     grid-template-rows: 75px 382px 280px 275px ;
+    margin-top: -63px;
 }
 
 article{
