@@ -31,10 +31,10 @@ body{
     'aside'
     'footer';
     grid-template-columns: 375px;
-    grid-template-rows: 338px 1200px 197px;
+    grid-template-rows: 338px 1100px 197px;
     font-family: 'Roboto','Shrikhand', sans-serif;
     margin: 0;
-    margin-left: 5px;
+    margin-left: 1px;
 }
 
 h1{
@@ -42,7 +42,29 @@ h1{
     font-size: 28px;
     font-weight: 400;
     margin-left: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     
+}
+
+.logo{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.menu_food i{
+  margin-right: 17px;
+}
+
+.menu_food i:hover{
+  -webkit-box-shadow: 0.25rem 0.25rem 10px #00000045;
+  box-shadow: 0.25rem 0.25rem 10px #00000045;
+  border-radius: 1em;
+  box-sizing: border-box;
+  background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
 h2{
@@ -111,7 +133,7 @@ p{
 
 section{
     background: #F6F6F6;
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0  ;
 }
 
 .btn{
@@ -126,12 +148,15 @@ section{
     background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
     background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   }
+
+  
   
   .btn a{
     font-size: 16px;
     font-weight: 500;
     color: white;
     text-decoration: none;
+    
   }
 
 header {
@@ -153,7 +178,7 @@ header {
 .logo img {
     width: 162px;
     height: 44px;
-    margin-left: 40px;
+    margin-left: 65px;
   }
 
 .background img{
@@ -161,8 +186,6 @@ header {
     height: 275px;
 }
   
-
-
 
 
 footer{
@@ -189,4 +212,8 @@ footer{
   text-decoration: none;
   color: #FFFFFF;
   
+  }
+
+  footer i{
+    margin-right: 15px;
   }
