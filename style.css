@@ -8,9 +8,11 @@ p{
   margin: 0;
 }
 
+
 h2{
   font-size: 24px;
   font-weight: 700;
+  
 }
 
 h3{
@@ -95,10 +97,13 @@ header img {
   height: 50px;
   padding: 12px 15px;
   border-radius: 25px;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px #00000045;
   box-shadow: 0.25rem 0.25rem 10px #00000045;
+  border-radius: 5rem;
   background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
   background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
+
 
 .btn_explore a{
   font-size: 16px;
@@ -106,6 +111,8 @@ header img {
   color: white;
   text-decoration: none;
 }
+
+
 
 .fonnctionnement{
   display: grid;
@@ -133,6 +140,29 @@ header img {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+.menu_fonctionement{
+  display: flex;
+  align-items: baseline;
+}
+
+.purple_btn{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -10px;
+  border-radius: 100%;
+  text-align: center;
+  background: #9356DC;
+  color: #FFFFFF;
+  font-size: 16x;
+  font-weight: 500;
+}
+
+.purple_btn p{
+  padding-top: 2px;
+}
+
 .fonnctionnement article:hover{
   background: #F5EDFF;
 }
@@ -143,6 +173,10 @@ header img {
 
 .fonnctionnement i:hover{
   color: #9356DC;
+}
+
+.restaurants h2{
+  margin-left: 20px;
 }
 
 .cards{
@@ -170,19 +204,33 @@ header img {
   border-radius: 15px 15px 0 0;
 }
 
+
+
+
 .article_footer{
-  display: grid;
-  grid-template-columns: 82% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 7px;
 }
 
 .article_footer i{
-  padding: 15px;
+  font-weight: 300;
+  font-size: 27px;
+  margin-right: 19px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+  font-size: 32px;
 }
 
-.logo_footer i:hover{
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 
+.article_footer i:hover{
+  -webkit-box-shadow: 0.25rem 0.25rem 10px #00000045;
+  box-shadow: 0.25rem 0.25rem 10px #00000045;
+  border-radius: 1em;
+  box-sizing: border-box;
+  background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
 .title_footer{
@@ -221,7 +269,10 @@ footer{
 footer a{
 text-decoration: none;
 color: #FFFFFF;
+}
 
+footer i{
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
