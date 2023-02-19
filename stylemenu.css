@@ -113,6 +113,7 @@ article{
     height: 68.07px;
     border-radius: 15.04px;
     background: #FFFFFF;
+    overflow: hidden;
     display: grid;
     grid-template-areas:  
     'nom nom nom price';
@@ -134,29 +135,26 @@ h3{
     font-weight: 500;
     margin-top: 12px;
     margin-bottom: 5px;
+    text-overflow: ellipsis;
     
 }
 
-p{
-    font-size: 14px;
+
+
+.menu_plate{
+    margin-left: 10px;
+    text-overflow: ellipsis;
+  
+}
+
+.menu_plate p{
+  font-size: 14px;
     font-weight: 300; 
     text-overflow: ellipsis;
     width: 230px;
     margin: 0;
 }
 
-.menu_plate{
-    margin-left: 10px;
-   margin-top: 15px;
-}
-
-.price{
-    font-size: 15px;
-    font-weight: 700;
-    grid-area: price;
-    margin-top: 40px;
-    padding-left: 50px;
-}
 
 section{
     background: #F6F6F6;
@@ -257,24 +255,38 @@ footer{
 
   .article_text{
     display: flex;
-    align-items: center;
+    text-align: left;
+
     width: 274px;
     height: 44px;
     
   }
 
+  .price {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 35px;
+    padding-left: 50px;
+    transition: 600ms;
+  }
   .check{
     display: flex;
-    margin-left: 43px;
+    margin-left: 300px;
     width: 59px;
     height: 69px;
     border-radius: 0 15px 15px 0;
     background-color: #99E2D0;
     transform: scale(1, 1);
+    transition: 600ms;
   }
 
-  .check:hover{
-    transform: translate(150px, -12px);
+  article:hover > .check{
+   margin-left: 42px;
+  }
+
+  .article_text:hover > .price{
+
+    padding-left: 0;
   }
 
   .check i{
