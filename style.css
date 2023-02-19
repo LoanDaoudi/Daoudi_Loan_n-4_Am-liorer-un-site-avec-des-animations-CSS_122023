@@ -229,14 +229,19 @@ header img {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: transform 1000ms;
+  transition: transform 1500ms;
 }
 
 
 .article_footer i:hover{
   transform: scale(1.35);
-  -webkit-text-fill-color: #9356DC;
+  background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));;
+  background-clip: border-box;
+  -webkit-background-clip: text;
   -webkit-text-stroke-width: 0px;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.35);
 }
 
 .title_footer{
@@ -279,6 +284,26 @@ color: #FFFFFF;
 
 footer i{
   margin-right: 15px;
+}
+
+.btn_new{
+  width: 80px;
+  height: 29px;
+  background: #99E2D0;
+  align-items: baseline;
+  position: absolute;
+  right: 35px;
+  margin-top: 25px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.btn_new p{
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
