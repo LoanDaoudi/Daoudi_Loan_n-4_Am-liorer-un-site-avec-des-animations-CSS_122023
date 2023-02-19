@@ -38,6 +38,7 @@ body{
     margin-left: 1px;
 }
 
+
 h1{
     font-family: 'Shrikhand', sans-serif;
     font-size: 28px;
@@ -59,17 +60,22 @@ h1{
   margin-right: 17px;
   margin: auto;
   font-size: 24px;
+  cursor: pointer;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: transform 1000ms;
+  transition: transform 1500ms;
 }
 
 
 .menu_food i:hover{
-  -webkit-text-color: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
-  -webkit-text-color: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));;
   transform: scale(1.35);
+  background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-fill-color: transparent;
 }
 .entree h2{
   margin-bottom: -5px;
@@ -191,6 +197,12 @@ header {
 
   header i{
     margin-left: -80px;
+    transition: transform 500ms;
+  }
+
+  header i:hover{
+    color: #9356DC;
+    transform: scale(1.5);
   }
   
   .logo{
@@ -272,10 +284,6 @@ footer{
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  }
-
-  article:hover{
-
   }
 
 
