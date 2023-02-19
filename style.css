@@ -153,6 +153,10 @@ header img {
   
 }
 
+.menu_fonctionement i{
+  margin-left: -60px;
+}
+
 .purple_btn{
   width: 24px;
   height: 24px;
@@ -190,7 +194,6 @@ header img {
 .cards{
   display: flex;
   flex-direction: column;
-  
   align-items: center;
   gap: 30px;
   background: #f6f6f6;
@@ -205,6 +208,10 @@ header img {
   background: #FFFFFF;
 }
 
+.picture_container{
+  display: inline-block;
+  position: relative;
+}
 .cards img {
   width: 335px;
   height: 190px;
@@ -212,7 +219,15 @@ header img {
   border-radius: 15px 15px 0 0;
 }
 
-
+figcaption{
+  width: 80px;
+  height: 29px;
+  background: #99E2D0;
+  color: #008766;
+  position: absolute;
+  top: 20%;
+  right: 05%;
+}
 
 
 .article_footer{
@@ -286,24 +301,7 @@ footer i{
   margin-right: 15px;
 }
 
-.btn_new{
-  width: 80px;
-  height: 29px;
-  background: #99E2D0;
-  align-items: baseline;
-  position: absolute;
-  right: 35px;
-  margin-top: 25px;
-  text-align: center;
-  cursor: pointer;
-  
-}
 
-.btn_new p{
-  color: #008766;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 7px;
-}
+
 
 /*# sourceMappingURL=style.css.map */
