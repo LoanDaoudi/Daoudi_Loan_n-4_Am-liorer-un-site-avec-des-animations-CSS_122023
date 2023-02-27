@@ -68,7 +68,7 @@ h1{
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: transform 1500ms;
+  transition: transform  2250ms;
 }
 
 
@@ -290,6 +290,12 @@ footer i{
 
   article:hover > .check{
    margin-left: 42px;
+   
+  }
+
+  article:hover >.check i{
+    animation: spin 2s  ;
+    font-size: 32px;
   }
 
   .article_text:hover > .price{
@@ -299,16 +305,32 @@ footer i{
 
   .check i{
   color: #FFFFFF;
-  font-size: 20px;
+  
   margin: auto;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   }
 
+  .check i:hover{
+    -webkit-text-fill-color: white;
+  }
+
+  @keyframes spin {
+    0%{
+    transform: rotate(0deg);
+    }
+
+    100%{
+      transform: rotate(360deg);
+    }
+    
+  }
+
   @media screen and (min-width: 768px){
     body{
       display: grid;
+      margin: auto;
       grid-template-areas:  
       'header'
       'aside'
@@ -316,8 +338,8 @@ footer i{
       grid-template-columns: 1440px;
       grid-template-rows: 360px 1110px 114px;
       font-family: 'Roboto','Shrikhand', sans-serif;
-      margin: 0;
-      margin-left: 1px;
+      
+      
    }
    header {
     display: grid;
