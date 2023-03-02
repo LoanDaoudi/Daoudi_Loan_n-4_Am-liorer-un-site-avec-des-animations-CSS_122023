@@ -97,6 +97,7 @@ h1{
   font-size: 25px;
   margin-right: 25px;
   display: flex;
+  cursor: pointer;
   
 }
 
