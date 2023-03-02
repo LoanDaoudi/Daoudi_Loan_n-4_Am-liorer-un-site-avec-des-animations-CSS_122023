@@ -3,11 +3,16 @@
 * {
   box-sizing: border-box;
 }
+html{
+  width: 375px;
+  margin: auto;
+}
 p{
   margin: 0;
 }
 .menu_food{
     grid-area: aside;
+    overflow: hidden;
 }
 
 .menu_plate{
@@ -17,14 +22,32 @@ p{
 
 .entree{
 grid-area: aside1;
+opacity: 0;
+transform: translateY(-30px);
+animation: apparition 1.5s 0.4s ease-out forwards;
 }
+
+
 
 .plats{
 grid-area: aside2;
+opacity: 0;
+transform: translateY(-30px);
+animation: apparition 1.5s 1.2s ease-out forwards;
 }
 
 .deserts{
 grid-area: aside3;
+opacity: 0;
+transform: translateY(-30px);
+animation: apparition 1.5s 1.8s ease-out forwards;
+}
+
+@keyframes apparition {
+  100%{
+    opacity: 1;
+  }
+  
 }
 
 body{
@@ -45,8 +68,10 @@ h1{
     font-family: 'Shrikhand', sans-serif;
     font-size: 28px;
     font-weight: 400;
-    margin-left: 17px;
+    padding-left: 15px;
+    width: 375px;
     margin: auto;
+    margin-right: 350px;
     display: flex;
     gap: 25px;
     justify-content: space-between;
@@ -60,26 +85,54 @@ h1{
   justify-content: space-between;
 }
 
-.menu_food i{
-  margin-right: 17px;
-  margin: auto;
-  font-size: 24px;
-  cursor: pointer;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  transition: transform  2250ms;
+.logo_h1{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  
+}
+
+.fa-heart{
+  -webkit-text-stroke-width: solid 1px black;
+  font-size: 25px;
+  margin-right: 25px;
+  display: flex;
+  
 }
 
 
-.menu_food i:hover{
-  transform: scale(1.35);
+.coeur1{
+  position: relative;
+  opacity: 1;
+  
+}
+
+
+
+
+.coeur2{
+  opacity: 0.01;
   background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
   background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-stroke-width: 0px;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  margin-left: -100px;
+  
+}
+
+.coeur2:hover{
+  animation: changecolor 1.5s forwards;
+}
+
+@keyframes changecolor  {
+  100%{
+    opacity: 1;
+  }
+
+
 }
 
 h2{
@@ -136,7 +189,7 @@ h3{
     font-weight: 500;
     margin-top: 12px;
     margin-bottom: 5px;
-    width: 230px;
+    width: 240px;
     
 }
 
@@ -165,6 +218,7 @@ section{
 .btn{
   margin: auto;
   margin-top: 27px;
+  margin-right: 430px;
   width: 218px;
   height: 50px;
   cursor: pointer;
@@ -294,8 +348,8 @@ footer i{
   }
 
   article:hover >.check i{
-    animation: spin 2s  ;
-    font-size: 32px;
+    animation: spin 1.5s  ;
+    font-size: 28px;
   }
 
   .article_text:hover > .price{
@@ -305,7 +359,7 @@ footer i{
 
   .check i{
   color: #FFFFFF;
-  
+
   margin: auto;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
@@ -328,6 +382,10 @@ footer i{
   }
 
   @media screen and (min-width: 768px){
+    html{
+      width: 1440px;
+      margin: auto;
+    }
     body{
       display: grid;
       margin: auto;
